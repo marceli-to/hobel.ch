@@ -1,9 +1,14 @@
 <div class="flex flex-col lg:grid lg:grid-cols-12 lg:gap-16">
-  <div class="lg:col-span-6 bg-yellow-100 min-h-200">
+  <div class="lg:col-span-6 bg-yellow-100 min-h-[200vh]">
     {{ content_left }} [content_left]
   </div>
-  <div class="lg:col-span-6 bg-orange-100 min-h-200">
+  <div class="lg:col-span-6 bg-orange-100 min-h-200 {{ is_homepage ? 'lg:bg-transparent lg:fixed lg:h-[calc(100%_-_150px)] lg:w-1/2 lg:left-[calc(50%_+_8px)] lg:top-50' : '' }}">
     {{ content_right }} [content_right]
+    <div class="lg:fixed lg:left-[calc(50%_+_8px)] lg:bottom-20">
+      Hobel<br>
+      Genossenschaft für Möbel<br>
+      und Innenausbau
+    </div>
   </div>
 </div>
 
