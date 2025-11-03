@@ -4,7 +4,7 @@ tabs:
     display: Content
     sections:
       -
-        display: Titel
+        display: Inhalte
         fields:
           -
             handle: title
@@ -14,42 +14,34 @@ tabs:
               localizable: false
               validate:
                 - required
-      -
-        display: 'Left Column'
-        fields:
           -
-            handle: left_content
+            handle: content
             field:
-              type: replicator
-              display: Inhaltselemente
+              type: bard
+              display: Content
               localizable: true
-              collapse: true
-              sets:
-                main_elements:
-                  display: Hauptelemente
-                  icon: addon-boxes-stack
-                  sets:
-                    neues_set:
-                      display: 'Neues Set'
-                      fields: {  }
-      -
-        display: 'Right Column'
-        fields:
+              if:
+                template: 'equals templates/one-column'
           -
-            handle: right_content
+            handle: content_left
             field:
-              type: replicator
-              display: Inhaltselemente
+              type: bard
+              display: 'Inhalt Links'
               localizable: true
-              collapse: true
-              sets:
-                main_elements:
-                  display: Hauptelemente
-                  icon: addon-boxes-stack
-                  sets:
-                    neues_set:
-                      display: 'Neues Set'
-                      fields: {  }
+              if:
+                template: 'equals templates/two-column'
+              remove_empty_nodes: false
+              width: 50
+          -
+            handle: content_right
+            field:
+              type: bard
+              display: 'Inhalt Rechts'
+              localizable: true
+              if:
+                template: 'equals templates/two-column'
+              remove_empty_nodes: false
+              width: 50
   seo:
     display: SEO
     sections:

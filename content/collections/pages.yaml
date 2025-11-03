@@ -2,8 +2,8 @@ title: Pages
 sites:
   - de
 propagate: false
-template: pages/show
-layout: pages/layout
+template: default
+layout: layout/default
 revisions: false
 route: '{parent_uri}/{slug}'
 sort_dir: asc
