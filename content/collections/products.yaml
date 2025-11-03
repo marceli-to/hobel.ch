@@ -1,0 +1,14 @@
+title: Products
+sites:
+  - de
+propagate: false
+template: show
+layout: products/layout
+revisions: false
+route: /products/{slug}
+sort_dir: asc
+preview_targets:
+  -
+    label: Entry
+    url: '{permalink}'
+    refresh: true
