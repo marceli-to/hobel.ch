@@ -1,0 +1,12 @@
+<a 
+  href="javascript:;" 
+  x-on:click="menu = !menu" 
+  title="Menü anzeigen"
+  class="flex items-center justify-center w-26 h-20 lg:w-30 lg:h-24 {{ class }}">
+  <span class="w-26 lg:w-30 h-auto" x-show="!menu">
+    {{ partial:icons/burger class="w-full h-auto" }}
+  </span>
+  <span class="w-20 lg:w-24 h-auto" x-show="menu">
+    {{ partial:icons/cross class="w-full h-auto" }}
+  </span>
+</a>

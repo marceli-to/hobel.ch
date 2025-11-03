@@ -1,0 +1,7 @@
+<div class="block md:hidden mb-24">
+  {{ partial:components/media/image :image="image_mobile" preset="3x4" :sizes="['lg', 'md']" eager="true" class="w-full h-auto aspect-[3/4]" }}
+</div>
+
+<div class="hidden md:block mb-34">
+  {{ partial:components/media/image :image="image_desktop" preset="16x9" :sizes="['2xl', 'xl', 'lg']" eager="true" class="w-full h-auto aspect-[16/9]" }}
+</div>

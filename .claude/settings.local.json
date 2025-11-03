@@ -1,0 +1,26 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(find:*)",
+      "Bash(ls:*)",
+      "Bash(php artisan:*)",
+      "Bash(grep:*)",
+      "Bash(npm run build:*)",
+      "mcp__laravel-boost__application-info",
+      "Bash(php:*)",
+      "Bash(composer update:*)",
+      "mcp__laravel-boost__search-docs",
+      "Bash(vendor/bin/pint:*)",
+      "mcp__laravel-boost__list-available-env-vars",
+      "Bash(git add:*)",
+      "Bash(git commit -m \"$(cat <<''EOF''\nRedirect emails to MAIL_TO in non-production environments\n\nPrevents accidentally sending emails to real users during development and testing.\n\n🤖 Generated with [Claude Code](https://claude.com/claude-code)\n\nCo-Authored-By: Claude <noreply@anthropic.com>\nEOF\n)\")",
+      "mcp__laravel-boost__list-routes",
+      "mcp__laravel-boost__tinker"
+    ],
+    "deny": []
+  },
+  "enableAllProjectMcpServers": true,
+  "enabledMcpjsonServers": [
+    "laravel-boost"
+  ]
+}

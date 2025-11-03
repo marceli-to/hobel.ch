@@ -1,0 +1,21 @@
+<section class="max-w-[var(--max-width-content)] mx-auto">
+
+  {{ download_category }}
+
+    <article class="border-t border-t-black pt-12 mb-40 lg:mb-80 lg:last:mb-0">
+
+      {{ partial:components/headings/h2 class="font-spezia-medium font-medium min-h-72 lg:min-h-0 lg:mb-44" }}
+        {{ title }}
+      {{ /partial:components/headings/h2 }}
+
+      <div class="flex flex-col gap-24 md:grid md:grid-cols-2 md:gap-x-20 md:gap-y-40">
+        {{ files }}
+          {{ partial:components/media/downloads/file :file="file" :file_name="file_name" }}
+        {{ /files }}
+      </div>
+
+    </article>
+
+  {{ /download_category }}
+  
+</section>
