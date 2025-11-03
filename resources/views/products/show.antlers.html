@@ -1,0 +1,27 @@
+{{# Products: 2-column layout with full-width header #}}
+
+{{# Full Width Header #}}
+{{ if header }}
+  <header class="mb-8">
+    {{ header }}
+  </header>
+{{ /if }}
+
+{{# Two Column Content #}}
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+
+  {{# Left Column #}}
+  <div class="lg:col-span-1">
+    {{ left_content }}
+      {{ partial:blocks }}
+    {{ /left_content }}
+  </div>
+
+  {{# Right Column #}}
+  <div class="lg:col-span-1">
+    {{ right_content }}
+      {{ partial:blocks }}
+    {{ /right_content }}
+  </div>
+
+</div>

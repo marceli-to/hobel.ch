@@ -1,0 +1,25 @@
+{{# Pages: 2-column layout with header in right column #}}
+
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+
+  {{# Left Column #}}
+  <div class="lg:col-span-1">
+    {{ left_content }}
+      {{ partial:blocks }}
+    {{ /left_content }}
+  </div>
+
+  {{# Right Column with Header #}}
+  <div class="lg:col-span-1">
+    {{ if right_header }}
+      <header class="mb-8">
+        {{ right_header }}
+      </header>
+    {{ /if }}
+
+    {{ right_content }}
+      {{ partial:blocks }}
+    {{ /right_content }}
+  </div>
+
+</div>
