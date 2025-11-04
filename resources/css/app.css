@@ -8,14 +8,12 @@
   @apply !hidden;
 }
 
-/* ----------------------------------------
-   Base variables (apply everywhere)
----------------------------------------- */
+/* Base variables */
 @layer base {
   :root {
     --header-height-sm: 4.063rem;  /* 65px */
-    --header-height-sm-expanded: 8.75rem; /* 140px */
     --header-height-lg: 7.5rem; /* 120px */
+    --header-height-expanded: 8.75rem; /* 140px */
     --footer-height-sm: 25rem; /* 400px */
     --footer-height-lg: 10rem; /* 160px */
     --logo-height-sm: 1.6875rem; /* 27px */
@@ -26,16 +24,14 @@
   }
 }
 
-/* ----------------------------------------
-   Custom utilities (responsive-compatible)
----------------------------------------- */
+/* Custom utilities (responsive-compatible) */
 @layer utilities {
   .left-start-6 {
     left: calc(var(--col-width) * 5 + var(--grid-gap) * 5);
   }
 
   .left-start-7 {
-    left: calc(var(--col-width) * 6 + var(--grid-gap) * 6 );
+    left: calc(var(--col-width) * 6 + var(--grid-gap) * 6);
   }
 
   .left-start-8 {
@@ -51,16 +47,13 @@
   }
 }
 
-/* ----------------------------------------
-   Global styles
----------------------------------------- */
+/* Global styles */
 main {
   @apply flex-1;
 }
 
 p:not(:last-child),
 ul:not(:last-child) {
-  /* add your spacing here if needed */
 }
 
 p:has(+ ul) {
@@ -68,7 +61,6 @@ p:has(+ ul) {
 }
 
 ul {
-  /* custom list styles here */
 }
 
 strong {

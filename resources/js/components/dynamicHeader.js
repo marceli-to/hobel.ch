@@ -62,7 +62,7 @@ export default () => ({
     if (this.scrolled) {
       this.$el.style.height = 'var(--header-height-sm)';
     } else {
-      this.$el.style.height = 'var(--header-height-sm-expanded)';
+      this.$el.style.height = 'var(--header-height-expanded)';
     }
 
     // Update logo height

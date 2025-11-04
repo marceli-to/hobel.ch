@@ -1,6 +1,14 @@
-<div class="flex flex-col lg:grid lg:grid-cols-12 lg:gap-20">
+<div class="
+  flex 
+  flex-col 
+  lg:grid 
+  lg:grid-cols-12 
+  lg:gap-20">
 
-  <div class="lg:col-span-6 pt-[var(--header-height-sm-expanded)] lg:pt-0">
+  <div class="
+    lg:col-span-6 
+    pt-[var(--header-height-expanded)] 
+    lg:pt-0">
 
     {{ content_left }}
       {{ partial:blocks }}
@@ -8,13 +16,27 @@
 
   </div>
 
-  <div class="px-20 lg:px-0 lg:fixed lg:h-[calc(100%_-_var(--header-height-lg)_-_var(--footer-height-lg))] lg:w-col-5 lg:left-start-8 lg:top-[var(--header-height-lg)]">
+  <div class="
+    px-20 
+    pt-40
+    lg:pt-80
+    lg:px-0 
+    lg:fixed 
+    lg:h-[calc(100%_-_var(--header-height-lg)_-_var(--footer-height-lg))] 
+    lg:w-col-5 
+    lg:left-start-8 
+    lg:top-[var(--header-height-lg)]">
 
     {{ content_right }}
       {{ partial:blocks }}
     {{ /content_right }}
 
-    <div class="hidden lg:block lg:fixed lg:left-start-8 lg:bottom-40">
+    <div class="
+      hidden 
+      lg:block 
+      lg:fixed 
+      lg:left-start-8 
+      lg:bottom-40">
       {{ partial:globals/claim }}
     </div>
 
