@@ -1,5 +1,7 @@
 {{ if social_media:instagram || social_media:linkedin }}
+
   <div class="flex gap-x-40">
+
     {{ if social_media:instagram }}
       <a 
         href="{{ social_media:instagram }}" 
@@ -21,5 +23,7 @@
         {{ partial:icons/linkedin }}
       </a>
     {{ /if }}
+
   </div>
+  
 {{ /if }}

@@ -1,4 +1,4 @@
-<header
+<header 
   class="
     _bg-white
     bg-blue-50
@@ -6,32 +6,95 @@
     top-0
     z-10
     pt-20
+    lg:pt-40
     sticky
-    h-[var(--header-height-sm)]">
-  <div class="lg:grid lg:grid-cols-12 lg:gap-20 h-full px-20">
-    <div class="hidden lg:block lg:col-span-6">
-      <h1 class="text-lg leading-none">
+    h-[var(--header-height-sm)]
+    lg:h-[var(--header-height-lg)]">
+
+  <div 
+    class="
+      lg:grid 
+      lg:grid-cols-12 
+      lg:gap-20 
+      h-full 
+      px-20
+      lg:px-0">
+
+    <!-- Title desktop -->
+    <div 
+      class="
+        hidden 
+        lg:block 
+        lg:col-span-6 
+        lg:pl-20">
+
+      <h1 
+        class="
+          text-lg 
+          leading-none">
         {{ title }}
       </h1>
+      
     </div>
-    <div class="flex justify-between w-full lg:col-span-6">
-      <div class="flex items-center gap-x-44 lg:order-2">
+
+    <!-- Logo, Title mobile, Menu buttons -->
+    <div 
+      class="
+        flex 
+        justify-between 
+        w-full 
+        lg:col-span-5 
+        lg:col-start-8">
+
+      <!-- Logo, Title mobile -->
+      <div 
+        class="
+          flex 
+          items-center 
+          gap-x-44 
+          lg:order-2 
+          lg:pr-45">
+
         <a
           href="/"
-          class="w-auto h-[var(--logo-height-sm)] lg:h-80">
-          {{ partial:icons/logo class="w-auto h-full"}}
+          class="
+            w-auto 
+            h-[var(--logo-height-sm)] 
+            lg:h-80">
+          {{ partial:icons/logo class="w-auto h-full" }}
         </a>
-        <h1 class="font-muoto-regular text-xxs leading-none lg:hidden">
+
+        <h1 class="
+          font-muoto-regular 
+          text-xxs 
+          leading-none 
+          lg:hidden">
           {{ title }}
         </h1>
+        
       </div>
+
+      <!-- Menu Buttons -->
       <div class="lg:order-1">
-        <div class="w-40 h-30 flex items-center justify-center">
+
+        <div 
+          class="
+            w-40 
+            h-30 
+            flex 
+            items-center 
+            justify-center">
+
           {{ partial:menu/buttons/show class="w-40 h-auto" }}
           {{ partial:menu/buttons/hide class="w-30 h-auto" }}
+
         </div>
+
       </div>
+
     </div>
+
   </div>
+
 </header>
 {{ partial:menu/wrapper }}
