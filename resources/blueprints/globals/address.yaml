@@ -1,0 +1,28 @@
+tabs:
+  main:
+    display: Main
+    sections:
+      -
+        fields:
+          -
+            handle: address_mobile
+            field:
+              buttons:
+                - removeformat
+                - anchor
+              toolbar_mode: floating
+              remove_empty_nodes: false
+              type: bard
+              display: 'Adresse (Mobile)'
+              localizable: false
+          -
+            handle: address_desktop
+            field:
+              buttons:
+                - removeformat
+                - anchor
+              toolbar_mode: floating
+              remove_empty_nodes: false
+              type: bard
+              display: 'Adresse (Desktop)'
+              localizable: false

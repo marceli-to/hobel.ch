@@ -4,7 +4,9 @@ tabs:
     display: Content
     sections:
       -
-        display: Inhalte
+        display: Layout
+      -
+        display: Content
         fields:
           -
             handle: title
@@ -17,31 +19,56 @@ tabs:
           -
             handle: content
             field:
-              type: bard
+              type: replicator
               display: Content
               localizable: true
+              collapsed: true
+              sets:
+                editor:
+                  display: Editor
+                  instructions: 'Rich text editor for formatted content with headings, lists, links, and more.'
+                  icon: text-formatting-markdown
+                  fields:
+                    -
+                      import: editor
               if:
                 template: 'equals templates/one-column'
           -
             handle: content_left
             field:
-              type: bard
+              type: replicator
               display: 'Inhalt Links'
               localizable: true
-              if:
-                template: 'equals templates/two-column'
-              remove_empty_nodes: false
+              collapsed: true
               width: 50
+              sets:
+                editor:
+                  display: Editor
+                  instructions: 'Rich text editor for formatted content with headings, lists, links, and more.'
+                  icon: text-formatting-markdown
+                  fields:
+                    -
+                      import: editor
+              if:
+                template: 'contains_any templates/two-column,templates/landing'
           -
             handle: content_right
             field:
-              type: bard
+              type: replicator
               display: 'Inhalt Rechts'
               localizable: true
-              if:
-                template: 'equals templates/two-column'
-              remove_empty_nodes: false
+              collapsed: true
               width: 50
+              sets:
+                editor:
+                  display: Editor
+                  instructions: 'Rich text editor for formatted content with headings, lists, links, and more.'
+                  icon: text-formatting-markdown
+                  fields:
+                    -
+                      import: editor
+              if:
+                template: 'contains_any templates/two-column,templates/landing'
   seo:
     display: SEO
     sections:
@@ -50,19 +77,13 @@ tabs:
         fields:
           -
             import: seo
-  settings:
-    display: Settings
-    sections:
-      -
-        display: Settings
-        fields:
-          -
-            import: settings
   sidebar:
     display: Sidebar
     sections:
       -
         fields:
+          -
+            import: settings
           -
             handle: slug
             field:

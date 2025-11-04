@@ -29,4 +29,11 @@ ul {
 }
 
 strong {
+  @apply font-muoto-regular font-normal;
+}
+
+
+
+.debug > * {
+  @apply bg-green-50 outline outline-1 outline-green-200;
 }

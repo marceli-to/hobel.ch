@@ -1,0 +1,25 @@
+{{ if social_media:instagram || social_media:linkedin }}
+  <div class="flex gap-x-40">
+    {{ if social_media:instagram }}
+      <a 
+        href="{{ social_media:instagram }}" 
+        target="_blank" 
+        rel="noopener" 
+        aria-label="Instagram"
+        class="hover:rotate-12 transition-all">
+        {{ partial:icons/instagram }}
+      </a>
+    {{ /if }}
+
+    {{ if social_media:linkedin }}
+      <a 
+        href="{{ social_media:linkedin }}" 
+        target="_blank" 
+        rel="noopener" 
+        aria-label="LinkedIn"
+        class="hover:rotate-12 transition-all">
+        {{ partial:icons/linkedin }}
+      </a>
+    {{ /if }}
+  </div>
+{{ /if }}

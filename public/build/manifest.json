@@ -1,24 +1,32 @@
 {
   "resources/css/app.css": {
-    "file": "assets/app-ad05737c.css",
+    "file": "assets/app-227c77c5.css",
     "isEntry": true,
     "src": "resources/css/app.css"
   },
-  "resources/css/fonts/Spezia-Medium.woff": {
-    "file": "assets/Spezia-Medium-799d0bc0.woff",
-    "src": "resources/css/fonts/Spezia-Medium.woff"
+  "resources/css/fonts/Muoto-Light-Italic.woff": {
+    "file": "assets/Muoto-Light-Italic-ebded867.woff",
+    "src": "resources/css/fonts/Muoto-Light-Italic.woff"
   },
-  "resources/css/fonts/Spezia-Medium.woff2": {
-    "file": "assets/Spezia-Medium-a91bc5f7.woff2",
-    "src": "resources/css/fonts/Spezia-Medium.woff2"
+  "resources/css/fonts/Muoto-Light-Italic.woff2": {
+    "file": "assets/Muoto-Light-Italic-a1a392c5.woff2",
+    "src": "resources/css/fonts/Muoto-Light-Italic.woff2"
   },
-  "resources/css/fonts/Spezia-Regular.woff": {
-    "file": "assets/Spezia-Regular-1d76dd36.woff",
-    "src": "resources/css/fonts/Spezia-Regular.woff"
+  "resources/css/fonts/Muoto-Light.woff": {
+    "file": "assets/Muoto-Light-08b817f4.woff",
+    "src": "resources/css/fonts/Muoto-Light.woff"
   },
-  "resources/css/fonts/Spezia-Regular.woff2": {
-    "file": "assets/Spezia-Regular-dbc94f51.woff2",
-    "src": "resources/css/fonts/Spezia-Regular.woff2"
+  "resources/css/fonts/Muoto-Light.woff2": {
+    "file": "assets/Muoto-Light-679984f1.woff2",
+    "src": "resources/css/fonts/Muoto-Light.woff2"
+  },
+  "resources/css/fonts/Muoto-Regular.woff": {
+    "file": "assets/Muoto-Regular-4a7fb7ef.woff",
+    "src": "resources/css/fonts/Muoto-Regular.woff"
+  },
+  "resources/css/fonts/Muoto-Regular.woff2": {
+    "file": "assets/Muoto-Regular-040b3615.woff2",
+    "src": "resources/css/fonts/Muoto-Regular.woff2"
   },
   "resources/js/app.js": {
     "file": "assets/app-88cf8755.js",

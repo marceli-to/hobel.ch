@@ -1,0 +1,23 @@
+<div class="flex flex-col lg:grid lg:grid-cols-12 lg:gap-20">
+
+  <div class="lg:col-span-6 bg-yellow-100 min-h-[200vh]">
+
+    {{ content_left }}
+      {{ partial:blocks }}
+    {{ /content_left }}
+
+  </div>
+
+  <div class="bg-orange-100 min-h-200 lg:bg-transparent lg:fixed lg:h-[calc(100%_-_150px)] lg:w-1/2 lg:left-[calc(50%_+_8px)] lg:top-50">
+
+    {{ content_right }}
+      {{ partial:blocks }}
+    {{ /content_right }}
+
+    <div class="hidden lg:block lg:fixed lg:left-[calc(50%_+_10px)] lg:bottom-40">
+      {{ partial:globals/claim }}
+    </div>
+
+  </div>
+
+</div>

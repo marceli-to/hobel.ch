@@ -1,0 +1,74 @@
+address_mobile:
+  -
+    type: paragraph
+    attrs:
+      class: null
+    content:
+      -
+        type: text
+        text: 'Aargauerstrasse 251'
+      -
+        type: hardBreak
+      -
+        type: text
+        text: '8048 Zürich'
+      -
+        type: hardBreak
+      -
+        type: text
+        marks:
+          -
+            type: link
+            attrs:
+              href: 'tel:+41 44 431 88 88'
+              rel: null
+              target: null
+              title: null
+        text: '+41 44 431 88 88'
+      -
+        type: hardBreak
+      -
+        type: text
+        marks:
+          -
+            type: link
+            attrs:
+              href: 'mailto:info@hobel.ch'
+              rel: null
+              target: null
+              title: null
+        text: 'info@hobel.ch '
+address_desktop:
+  -
+    type: paragraph
+    attrs:
+      class: null
+    content:
+      -
+        type: text
+        text: 'Aargauerstrasse 251, 8048 Zürich / '
+      -
+        type: text
+        marks:
+          -
+            type: link
+            attrs:
+              href: 'tel:+41 44 431 88 88'
+              rel: null
+              target: null
+              title: null
+        text: '+41 44 431 88 88'
+      -
+        type: text
+        text: ' / '
+      -
+        type: text
+        marks:
+          -
+            type: link
+            attrs:
+              href: 'mailto:info@hobel.ch'
+              rel: null
+              target: null
+              title: null
+        text: 'info@hobel.ch '

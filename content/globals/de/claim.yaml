@@ -1,0 +1,27 @@
+content:
+  -
+    type: paragraph
+    attrs:
+      class: null
+    content:
+      -
+        type: text
+        marks:
+          -
+            type: bold
+        text: HOBEL
+      -
+        type: hardBreak
+      -
+        type: text
+        text: Genossenschaft
+      -
+        type: hardBreak
+      -
+        type: text
+        text: 'für Möbel'
+      -
+        type: hardBreak
+      -
+        type: text
+        text: 'und Innenausbau'

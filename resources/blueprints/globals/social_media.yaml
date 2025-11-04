@@ -1,0 +1,23 @@
+title: 'Social Media'
+tabs:
+  main:
+    display: Main
+    sections:
+      -
+        fields:
+          -
+            handle: instagram
+            field:
+              type: text
+              display: Instagram
+              instructions: 'Instagram profile URL.'
+              localizable: false
+              instructions_position: below
+          -
+            handle: linkedin
+            field:
+              type: text
+              display: LinkedIn
+              instructions: 'LinkedIn profile URL.'
+              localizable: false
+              instructions_position: below

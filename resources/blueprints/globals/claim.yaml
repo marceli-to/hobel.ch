@@ -1,0 +1,22 @@
+title: Claim
+tabs:
+  main:
+    display: Main
+    sections:
+      -
+        fields:
+          -
+            handle: content
+            field:
+              type: bard
+              display: Content
+              instructions: 'Claim displayed on the landing page.'
+              localizable: true
+              buttons:
+                - bold
+                - removeformat
+                - nobr
+              toolbar_mode: floating
+              remove_empty_nodes: false
+              collapse: true
+              instructions_position: below
