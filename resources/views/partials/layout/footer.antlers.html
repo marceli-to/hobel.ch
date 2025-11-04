@@ -1,8 +1,8 @@
-<footer class="bg-white w-full pt-78 lg:pt-100 pb-40 px-20 lg:min-h-160">
+<footer class="bg-white w-full pt-78 lg:pt-100 pb-40 px-20">
 
-  <div class="flex flex-col gap-y-36 lg:grid lg:grid-cols-12 lg:gap-x-20 debug">
+  <div class="flex flex-col gap-y-36 lg:grid lg:grid-cols-12 lg:gap-x-20">
 
-    <div class="{{ is_homepage ? 'lg:hidden' : 'lg:col-span-2 lg:col-start-7 lg:self-end lg:order-2' }}">
+    <div class="lg:col-span-2 lg:col-start-7 lg:self-end lg:order-2 {{ is_homepage ? 'lg:hidden' : '' }}">
       {{ partial:globals/claim }}
     </div>
 
@@ -10,18 +10,7 @@
       {{ partial:globals/social_media }}
     </div>
 
-    <div 
-      class="
-        text-xs 
-        lg:text-sm
-        leading-[1.4]
-        lg:col-span-6
-        lg:order-1
-        lg:self-end
-        [&_p]:!mb-0 
-        hover:[&_a]:underline 
-        [&_a]:underline-offset-2 
-        [&_a]:decoration-1">
+    <div class="text-xs lg:text-sm leading-[1.4] lg:col-span-6 lg:order-1 lg:self-end hover:[&_a]:underline [&_a]:underline-offset-2 [&_a]:decoration-1">
       {{ partial:globals/address }}
     </div>
 
