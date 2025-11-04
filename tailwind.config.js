@@ -26,6 +26,7 @@ export default {
   ],
 
   safelist: [
+    
   ],
 
   theme: {

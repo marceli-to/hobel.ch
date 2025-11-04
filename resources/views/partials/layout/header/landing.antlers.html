@@ -1,0 +1,39 @@
+<header
+  x-data="dynamicHeader"
+  data-dynamic-header="true"
+  class="
+    bg-white
+    w-full
+    top-0
+    z-10
+    pt-20
+    lg:pt-40
+    lg:h-[var(--header-height-lg)]
+    fixed
+    transition-[height]
+    will-change-[height]
+    duration-300
+    lg:duration-0
+    lg:w-col-5
+    lg:left-start-8
+    {{ class }}">
+  <div class="h-full px-20 lg:px-0 lg:pr-45">
+    <div class="flex justify-between w-full">
+      <div class="lg:order-2">
+        <a
+          href="/"
+          data-dynamic-logo
+          class="w-auto lg:h-80 transition-[height] will-change-[height] duration-300 lg:duration-0">
+          {{ partial:icons/logo class="w-auto h-full"}}
+        </a>
+      </div>
+      <div class="lg:order-1">
+        <div class="w-40 h-30 flex items-center justify-center">
+          {{ partial:menu/buttons/show class="w-40 h-auto" }}
+          {{ partial:menu/buttons/hide class="w-30 h-auto" }}
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+{{ partial:menu/wrapper }}
