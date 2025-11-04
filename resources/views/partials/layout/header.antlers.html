@@ -1,10 +1,42 @@
-<header class="bg-blue-100 w-full min-h-50 {{ is_homepage ? 'lg:w-1/2 lg:fixed lg:left-[calc(50%_+_8px)]' : '' }}">
-  <div class="lg:grid lg:grid-cols-12 lg:gap-20">
-    <div class="lg:col-span-6 hidden lg:block">
-      {{ title }}
+<header
+  x-data="dynamicHeader"
+  {{ if is_homepage }}
+    data-dynamic-header="true"
+  {{ /if }}
+  class="
+    _bg-white
+    bg-blue-50
+    w-full
+    top-0
+    z-10
+    pt-20
+    {{ is_homepage ? 'fixed transition-[height] will-change-[height] duration-300 lg:duration-0 lg:w-1/2 lg:left-[calc(50%_-_10px)]' : 'sticky h-[var(--header-height-sm)]' }}">
+  <div class="lg:grid lg:grid-cols-12 gap-20 h-full px-20">
+    <div class="hidden lg:block lg:col-span-6">
+      <h1 class="text-lg leading-none">
+        {{ title }}
+      </h1>
     </div>  
-    <div class="lg:col-span-6">
-      [Burger] [Logo]
+    <div class="flex justify-between w-full lg:col-span-6">
+      <div class="flex items-center gap-x-44 lg:order-2">
+        <a
+          href="/"
+          data-dynamic-logo
+          class="w-auto lg:h-80 {{ is_homepage ? 'transition-[height] will-change-[height] duration-300 lg:duration-0' : 'h-[var(--logo-height-sm)]'}}">
+          {{ partial:icons/logo class="w-auto h-full"}}
+        </a>
+        {{ if !is_homepage }}
+          <h1 class="font-muoto-regular text-xxs leading-none lg:hidden">
+            {{ title }}
+          </h1>
+        {{ /if }}
+      </div>
+      <div class="lg:order-1">
+        <div class="w-40 h-30 flex items-center justify-center">
+          {{ partial:menu/buttons/show class="w-40 h-auto" }}
+          {{ partial:menu/buttons/hide class="w-30 h-auto" }}
+        </div>
+      </div>
     </div>
   </div>
 </header>

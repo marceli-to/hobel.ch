@@ -47,10 +47,11 @@ export default {
       },
 
       fontSize: {
-        xs: '1.063rem', // 17px
-        sm: '1.125rem', // 18px
-        md: '1.375rem', // 22px
-        lg: '1.75rem',  // 28px
+        xxs: '0.9375rem', // 15px
+        xs: '1.063rem',   // 17px
+        sm: '1.125rem',   // 18px
+        md: '1.375rem',   // 22px
+        lg: '1.75rem',    // 28px
       },
       
       zIndex: {

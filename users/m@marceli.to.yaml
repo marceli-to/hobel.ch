@@ -26,7 +26,7 @@ preferences:
         - slug
         - status
         - site
-      after_save: continue_editing
+      after_save: create_another
     team:
       columns:
         - firstname

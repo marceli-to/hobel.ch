@@ -1,20 +1,5 @@
 <div
-  class="
-    bg-white
-    fixed
-    top-[var(--header-height-sm)]
-    lg:top-[calc(var(--header-height-lg)_+_12px)]
-    left-0
-    2xl:left-[calc(((100%_-_var(--max-width-container))_/_2))]
-    z-20
-    px-20
-    lg:px-22
-    pt-16
-    lg:pt-0
-    w-full
-    lg:max-w-[336px]
-    min-h-[calc(100dvh_-_var(--header-height-sm))]
-    lg:min-h-[calc(100dvh_-_var(--header-height-lg)_-_12px)]"
+  class="_bg-white bg-green-50 w-[70%] fixed right-0 z-20 pr-20 pt-52 top-[var(--header-height-sm)] h-[calc(100dvh_-_var(--header-height-sm))]"
   x-cloak
   x-show="menu"
   @click.outside="menu = false"
@@ -24,19 +9,11 @@
   x-transition:leave="transition ease-in duration-0"
   x-transition:leave-start="opacity-100"
   x-transition:leave-end="opacity-0">
-  <nav class="relative lg:-top-2">
-    <ul class="flex flex-col gap-y-20 lg:gap-y-18">
+  <nav>
+    <ul class="flex flex-col gap-y-20 items-end">
       {{ nav:main }}
         {{ partial:menu/item }}
       {{ /nav:main }}
-      <li class="lg:hidden">
-        <a
-          href="javascript:;"
-          x-on:click="window.dispatchEvent(new CustomEvent('toggle-auth'))"
-          class="font-spezia-medium font-medium leading-none lg:text-md hover:text-olverra transition-colors">
-          Login
-        </a>
-      </li>
     </ul>
   </nav>
 </div>

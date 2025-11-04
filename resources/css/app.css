@@ -9,7 +9,10 @@
 }
 
 :root {
-  /*--header-height-sm: 2.875rem; /* 46 px */
+  --header-height-sm: 4.063rem;  /* 65px */
+  --header-height-sm-expanded: 8.75rem; /* 140px */
+  --logo-height-sm: 1.688rem; /* 27px */
+  --logo-height-sm-expanded: 5rem; /* 80px */
 }
 
 main {

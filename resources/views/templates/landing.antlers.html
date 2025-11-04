@@ -1,14 +1,14 @@
 <div class="flex flex-col lg:grid lg:grid-cols-12 lg:gap-20">
 
-  <div class="lg:col-span-6 bg-yellow-100 min-h-[200vh]">
-
+  <div class="lg:col-span-6 bg-yellow-100 min-h-[200vh] pt-[var(--header-height-sm-expanded)] lg:pt-0">
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis voluptate, dignissimos ex, id facere nihil maxime laborum sit, atque iure dolorem ratione ut. Doloribus odit est voluptate assumenda rem modi.</p>
     {{ content_left }}
       {{ partial:blocks }}
     {{ /content_left }}
 
   </div>
 
-  <div class="bg-orange-100 min-h-200 lg:bg-transparent lg:fixed lg:h-[calc(100%_-_150px)] lg:w-1/2 lg:left-[calc(50%_+_8px)] lg:top-50">
+  <div class="bg-orange-100 min-h-200 lg:bg-transparent lg:fixed lg:h-[calc(100%_-_150px)] lg:w-1/2 lg:left-[calc(50%_+_10px)] lg:top-50">
 
     {{ content_right }}
       {{ partial:blocks }}
