@@ -23,6 +23,8 @@ tabs:
               display: Content
               localizable: true
               collapsed: true
+              if:
+                template: 'equals templates/one-column'
               sets:
                 editor:
                   display: Editor
@@ -31,8 +33,6 @@ tabs:
                   fields:
                     -
                       import: editor
-              if:
-                template: 'equals templates/one-column'
           -
             handle: content_left
             field:
@@ -41,16 +41,26 @@ tabs:
               localizable: true
               collapsed: true
               width: 50
-              sets:
-                editor:
-                  display: Editor
-                  instructions: 'Rich text editor for formatted content with headings, lists, links, and more.'
-                  icon: text-formatting-markdown
-                  fields:
-                    -
-                      import: editor
               if:
                 template: 'contains_any templates/two-column,templates/landing'
+              sets:
+                main:
+                  display: Main
+                  sets:
+                    editor:
+                      display: Editor
+                      instructions: 'Rich-Text-Editor für formatierten Inhalt mit Überschriften, Listen, Links.'
+                      icon: text-formatting-markdown
+                      fields:
+                        -
+                          import: editor
+                    page_teaser:
+                      display: Seitenteaser
+                      instructions: 'Teaser mit Bild, Titel und Link'
+                      icon: media-image-picture-orientation
+                      fields:
+                        -
+                          import: page_teaser
           -
             handle: content_right
             field:
@@ -59,6 +69,8 @@ tabs:
               localizable: true
               collapsed: true
               width: 50
+              if:
+                template: 'contains_any templates/two-column,templates/landing'
               sets:
                 editor:
                   display: Editor
@@ -67,8 +79,6 @@ tabs:
                   fields:
                     -
                       import: editor
-              if:
-                template: 'contains_any templates/two-column,templates/landing'
   seo:
     display: SEO
     sections:

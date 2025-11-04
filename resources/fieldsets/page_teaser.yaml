@@ -1,0 +1,27 @@
+title: Seitenteaser
+fields:
+  -
+    handle: title
+    field:
+      type: text
+      display: Title
+      localizable: true
+      instructions_position: below
+  -
+    handle: image
+    field:
+      max_files: 1
+      container: assets
+      type: assets
+      display: Image
+      localizable: true
+      instructions_position: below
+  -
+    handle: link
+    field:
+      collections:
+        - pages
+      container: assets
+      type: link
+      display: Link
+      localizable: false

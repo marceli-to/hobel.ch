@@ -6,49 +6,66 @@
     lg:grid-cols-12 
     lg:gap-20">
 
+  <!-- Left -->
   <div 
     class="
       lg:col-span-6 
-      pt-[var(--header-height-expanded)] 
+      pt-[var(--header-height-expanded)]
       lg:pt-0">
 
-    {{ content_left }}
+    <div
+      class="
+        flex
+        flex-col
+        gap-y-20
+        pt-40
+        lg:pt-0">
 
-      {{ partial:blocks }}
-      
-    {{ /content_left }}
+      {{ content_left }}
+        {{ partial:blocks }}
+      {{ /content_left }}
+
+    </div>
 
   </div>
 
+  <!-- Right -->
   <div 
     class="
-      px-20 
+      px-20
+      lg:pl-0
+      lg:pr-45 
       pt-40
       lg:pt-80
-      lg:px-0 
       lg:fixed 
       lg:h-[calc(100%_-_var(--header-height-lg)_-_var(--footer-height-lg))] 
       lg:w-col-5 
       lg:left-start-8 
-      lg:top-[var(--header-height-lg)]">
+      lg:top-[var(--header-height-lg)]
+      lg:grid 
+      lg:grid-cols-5 
+      lg:gap-20
+      lg:items-start">
 
-    {{ content_right }}
+      <!-- Content -->
+      <div class="col-span-5 xl:col-span-5">
+        {{ content_right }}
+          {{ partial:blocks }}
+        {{ /content_right }}
+      </div>
 
-      {{ partial:blocks }}
+      <!-- Claim -->
+      <div 
+        class="
+          hidden 
+          lg:block 
+          lg:fixed 
+          lg:left-start-8 
+          lg:bottom-40">
 
-    {{ /content_right }}
+        {{ partial:globals/claim }}
 
-    <div 
-      class="
-        hidden 
-        lg:block 
-        lg:fixed 
-        lg:left-start-8 
-        lg:bottom-40">
-
-      {{ partial:globals/claim }}
-
-    </div>
+      </div>
 
   </div>
 

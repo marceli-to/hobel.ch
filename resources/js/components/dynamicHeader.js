@@ -45,7 +45,7 @@ export default () => ({
 
   handleScroll() {
     const currentScrollY = window.scrollY;
-    const threshold = 50;
+    const threshold = 40;
 
     this.scrolled = currentScrollY > threshold;
 

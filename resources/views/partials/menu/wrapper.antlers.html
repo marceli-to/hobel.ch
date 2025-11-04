@@ -1,14 +1,20 @@
 <div
   class="
-    bg-white 
-    w-[70%] 
+    bg-white
+    w-[70%]
+    lg:w-col-5
     fixed 
     right-0 
     z-20 
     pr-20 
-    pt-52 
-    top-[var(--header-height-sm)] 
-    h-[calc(100dvh_-_var(--header-height-sm))]"
+    _pt-52 
+    _top-[var(--header-height-sm)]
+    pt-104
+    lg:pt-52
+    lg:top-[var(--header-height-lg)]
+    _h-[calc(100dvh_-_var(--header-height-sm))]
+    h-dvh
+    lg:h-[calc(100dvh_-_var(--header-height-lg))]"
   x-cloak
   x-show="menu"
   @click.outside="menu = false"
@@ -19,7 +25,7 @@
   x-transition:leave-start="opacity-100"
   x-transition:leave-end="opacity-0">
   <nav>
-    <ul class="flex flex-col gap-y-20 items-end">
+    <ul class="flex flex-col gap-y-20 items-end lg:items-start">
       {{ nav:main }}
         {{ partial:menu/item }}
       {{ /nav:main }}
