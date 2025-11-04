@@ -70,7 +70,7 @@ export default () => ({
       if (this.scrolled) {
         this.logo.style.height = 'var(--logo-height-sm)';
       } else {
-        this.logo.style.height = 'var(--logo-height-sm-expanded)';
+        this.logo.style.height = 'var(--logo-height-expanded)';
       }
     }
   }

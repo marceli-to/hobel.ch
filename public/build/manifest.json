@@ -1,6 +1,6 @@
 {
   "resources/css/app.css": {
-    "file": "assets/app-792948fc.css",
+    "file": "assets/app-5706157f.css",
     "isEntry": true,
     "src": "resources/css/app.css"
   },
@@ -29,7 +29,7 @@
     "src": "resources/css/fonts/Muoto-Regular.woff2"
   },
   "resources/js/app.js": {
-    "file": "assets/app-5c941447.js",
+    "file": "assets/app-17c1f61c.js",
     "isEntry": true,
     "src": "resources/js/app.js"
   }

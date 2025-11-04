@@ -16,10 +16,10 @@
     --header-height-sm: 4.063rem;  /* 65px */
     --header-height-sm-expanded: 8.75rem; /* 140px */
     --header-height-lg: 7.5rem; /* 120px */
-    --footer-height-sm: 26.5625rem; /* 425px */
-    --footer-height-lg: 11.25rem; /* 180px */
-    --logo-height-sm: 1.688rem; /* 27px */
-    --logo-height-sm-expanded: 5rem; /* 80px */
+    --footer-height-sm: 25rem; /* 400px */
+    --footer-height-lg: 10rem; /* 160px */
+    --logo-height-sm: 1.6875rem; /* 27px */
+    --logo-height-expanded: 5rem; /* 80px */
     --grid-columns: 12;
     --grid-gap: 1.25rem; /* 20px */
     --col-width: calc((100% - (11 * var(--grid-gap))) / var(--grid-columns));
