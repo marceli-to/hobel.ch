@@ -36,12 +36,8 @@ export default {
 
     extend: {
 
-      screens: {
-
-      },
-      
-      colors: {
-
+      maxWidth: {
+        'prose': '65ch', // 65 characters
       },
 
       fontFamily: {

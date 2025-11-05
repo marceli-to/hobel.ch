@@ -61,17 +61,36 @@ main {
 
 p:not(:last-child),
 ul:not(:last-child) {
+  @apply mb-16 lg:mb-24;
+}
+
+p.text-large {
+  @apply text-md lg:text-lg;
+}
+
+p.text-large:not(:last-child) {
+  @apply mb-20 lg:mb-36;
+}
+
+p:not(.text-large) {
+  @apply max-w-prose;
 }
 
 p:has(+ ul) {
   @apply !mb-0;
 }
 
-ul {
-}
-
 strong {
   @apply font-muoto-regular font-normal;
+}
+
+article h2,
+article h3 {
+  @apply font-muoto-regular font-normal;
+}
+
+article h2 {
+  @apply mb-16 lg:mb-24;
 }
 
 /* Debug helper */

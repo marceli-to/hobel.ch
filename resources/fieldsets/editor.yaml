@@ -13,6 +13,7 @@ fields:
         - superscript
         - anchor
         - nobr
+        - text-large
       toolbar_mode: floating
       remove_empty_nodes: true
       type: bard
