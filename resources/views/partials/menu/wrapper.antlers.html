@@ -2,18 +2,14 @@
   class="
     bg-white
     w-[70%]
-    _lg:w-col-5
     lg:w-col-padded-5
     fixed 
     right-0 
     z-20 
     pr-20 
-    _pt-52 
-    _top-[var(--header-height-sm)]
-    pt-104
-    lg:pt-36
+    pt-98
+    lg:pt-0
     lg:top-[var(--header-height-lg)]
-    _h-[calc(100dvh_-_var(--header-height-sm))]
     h-dvh
     lg:h-[calc(100dvh_-_var(--header-height-lg))]"
   x-cloak
@@ -25,7 +21,7 @@
   x-transition:leave="transition ease-in duration-0"
   x-transition:leave-start="opacity-100"
   x-transition:leave-end="opacity-0">
-  <nav>
+  <nav class="lg:-mt-3">
     <ul class="flex flex-col gap-y-20 items-end lg:items-start">
       {{ nav:main }}
         {{ partial:menu/item }}
