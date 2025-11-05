@@ -1,10 +1,11 @@
 <a 
   href="{{ link }}"
-  class="relative">
+  aria-label="{{ title }}"
+  class="relative group overflow-hidden">
 
-  {{ partial:headings/h2 class="text-md lg:text-lg absolute top-16 lg:top-35 left-20" }}
+  {{ partial:headings/h2 class="text-md lg:text-lg absolute top-16 lg:top-35 left-20 z-20" }}
     {{ title }}
   {{ /partial:headings/h2 }}
 
-  {{ partial:media/image }}
+  {{ partial:media/image :sizes="['2xl', 'xl', 'lg']" class="relative z-10 group-hover:scale-110 origin-center transition-transform duration-700" }}
 </a>
