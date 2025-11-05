@@ -26,7 +26,10 @@ export default {
   ],
 
   safelist: [
-    
+    '!bg-white',
+    'bg-white',
+    'bg-white/90',
+    'bg-transparent',
   ],
 
   theme: {

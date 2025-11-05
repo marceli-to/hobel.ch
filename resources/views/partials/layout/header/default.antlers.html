@@ -1,15 +1,15 @@
 <header 
   class="
-    _bg-white
-    bg-blue-50
+    {{ background_header ? background_header : 'bg-white' }}
     w-full
     top-0
-    z-10
+    z-30
     pt-20
     lg:pt-40
     sticky
     h-[var(--header-height-sm)]
-    lg:h-[var(--header-height-lg)]">
+    lg:h-[var(--header-height-lg)]"
+  :class="{ '!bg-white' : menu }">
 
   <div 
     class="

@@ -1,0 +1,46 @@
+title: 'Team Member'
+fields:
+  -
+    handle: image
+    field:
+      max_files: 1
+      container: assets
+      type: assets
+      display: Image
+      localizable: true
+      instructions_position: below
+      folder: team
+  -
+    handle: firstname
+    field:
+      type: text
+      display: Firstname
+      localizable: true
+      instructions_position: below
+      validate:
+        - required
+  -
+    handle: name
+    field:
+      type: text
+      display: Name
+      localizable: true
+      instructions_position: below
+      validate:
+        - required
+  -
+    handle: email
+    field:
+      type: text
+      display: E-Mail
+      localizable: false
+      instructions_position: below
+      validate:
+        - email
+  -
+    handle: phone
+    field:
+      type: text
+      display: Phone
+      localizable: false
+      instructions_position: below

@@ -4,8 +4,6 @@ tabs:
     display: Content
     sections:
       -
-        display: Layout
-      -
         display: Content
         fields:
           -
@@ -26,13 +24,39 @@ tabs:
               if:
                 template: 'equals templates/one-column'
               sets:
-                editor:
-                  display: Editor
-                  instructions: 'Rich text editor for formatted content with headings, lists, links, and more.'
-                  icon: text-formatting-markdown
-                  fields:
-                    -
-                      import: editor
+                main:
+                  display: Main
+                  sets:
+                    editor:
+                      display: Editor
+                      instructions: 'Rich text editor for formatted content with headings, lists, links, and more.'
+                      icon: text-formatting-markdown
+                      fields:
+                        -
+                          import: editor
+                    team_members:
+                      display: 'Team Members'
+                      instructions: 'Add team members'
+                      icon: user-multiple
+                      fields:
+                        -
+                          handle: team_members
+                          field:
+                            collapse: true
+                            type: replicator
+                            display: 'Team Members'
+                            localizable: false
+                            sets:
+                              neue_setgruppe:
+                                display: 'Neue Setgruppe'
+                                sets:
+                                  team_member:
+                                    display: 'Team Member'
+                                    instructions: 'Add a team member'
+                                    icon: user-avatar
+                                    fields:
+                                      -
+                                        import: team_member
           -
             handle: content_left
             field:

@@ -42,9 +42,16 @@
     width: calc(var(--col-width) * 5 + var(--grid-gap) * 4);
   }
 
+  .w-col-padded-5 {
+    width: calc(var(--col-width) * 5 + var(--grid-gap) * 4 + 1.25rem);
+    padding-left: 1.25rem;
+  }
+
+
   .w-col-6 {
     width: calc(var(--col-width) * 6 + var(--grid-gap) * 5);
   }
+
 }
 
 /* Global styles */

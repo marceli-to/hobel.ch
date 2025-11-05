@@ -1,0 +1,32 @@
+<div>
+  {{ partial:media/image 
+    :sizes="['xl', 'lg']"
+    :caption="{{ firstname }} {{ name }}"
+    class="aspect-[385/480] w-full h-full object-cover"
+  }}
+    <div class="p-20">
+
+      <div>
+        {{ firstname }} {{ name }}
+      </div>
+
+      {{ if email }}
+        <a 
+          href="mailto:{{ email }}"
+          aria-label="E-Mail an {{ firstname }} {{ name }} senden"
+          class="block no-underline hover:underline-offset-2 hover:decoration-1 hover:underline overflow-hidden text-ellipsis">
+          {{ email }}
+        </a>
+      {{ /if }}
+
+      {{ if phone }}
+        <a 
+          href="tel:{{ phone }}"
+          aria-label="Telefonnummer von {{ firstname }} {{ name }} anrufen"
+          class="block no-underline hover:underline-offset-2 hover:decoration-1 hover:underline">
+          {{ phone }}
+        </a>
+      {{ /if }}
+    </div>
+
+</div>

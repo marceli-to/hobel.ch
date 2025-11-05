@@ -1,6 +1,23 @@
 title: Settings
 fields:
   -
+    handle: background_header
+    field:
+      options:
+        -
+          key: bg-white
+          value: 'Weiss, 100%'
+        -
+          key: bg-white/90
+          value: 'Weiss, 90%'
+        -
+          key: bg-transparent
+          value: Transparent
+      default: bg-white
+      type: select
+      display: Header
+      localizable: false
+  -
     handle: template
     field:
       type: template
