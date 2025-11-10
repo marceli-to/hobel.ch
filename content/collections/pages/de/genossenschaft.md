@@ -7,7 +7,7 @@ robots: index_follow
 template: templates/two-column
 layout: layout/default
 updated_by: c2f8321e-be41-4d83-b9ee-8136dba46b39
-updated_at: 1762380517
+updated_at: 1762780674
 content_left:
   -
     id: mhmjq26v
@@ -109,4 +109,6 @@ content_right:
     type: editor
     enabled: true
 background_header: bg-white
+padding_x: true
+fullwidth: false
 ---

@@ -1,0 +1,67 @@
+<div 
+  class="
+    lg:hidden
+    relative
+    w-full">
+    
+  <div 
+    class="swiper w-full" 
+    data-product-swiper>
+
+    <div class="swiper-wrapper w-full">
+
+      {{ images }}
+
+       <div class="swiper-slide">
+          {{ partial:media/image
+            :image="url"
+            :sizes="['2xl', 'xl', 'lg']"
+            eager="true"
+            class="w-full h-full aspect-square object-cover" }}
+        </div>
+
+      {{ /images }}
+
+    </div>
+
+  </div>
+
+  <button
+    class="
+      swiper-btn-product-prev 
+      flex
+      items-center
+      justify-center
+      absolute 
+      left-0 
+      top-1/2 
+      -translate-y-1/2 
+      h-36
+      w-28
+      z-10"
+    aria-label="Previous image">
+
+    {{ partial:icons/chevron-left class="w-12 h-auto" }}
+
+  </button>
+
+  <button
+    class="
+      swiper-btn-product-next
+      flex
+      items-center
+      justify-center
+      absolute 
+      right-0 
+      top-1/2 
+      -translate-y-1/2 
+      h-36
+      w-28
+      z-10"
+    aria-label="Next image">
+
+    {{ partial:icons/chevron-right class="w-12 h-auto" }}
+
+  </button>
+
+</div>

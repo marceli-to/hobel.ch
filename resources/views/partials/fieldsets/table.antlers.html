@@ -1,0 +1,15 @@
+<article>
+  {{ if table_heading }}
+    {{ partial:headings/h3 class="mb-16" }}
+      {{ table_heading }}
+    {{ /partial:headings/h3 }}
+  {{ /if }}
+
+  {{ if table_row }}
+    {{ table_row }}
+      <div class="py-10 last:pb-0 border-t border-black flex items-center">
+        {{ table_row_content | nl2br }}
+      </div>
+    {{ /table_row }}
+    {{ /if }}
+</article>

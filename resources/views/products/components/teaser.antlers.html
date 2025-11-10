@@ -1,5 +1,5 @@
 <a 
-  href="{{ link }}"
+  href="{{ url }}"
   aria-label="{{ title }}"
   class="
     relative 
@@ -12,15 +12,16 @@
         lg:text-lg 
         absolute 
         top-16 
-        lg:top-27 
+        lg:top-31 
         left-20 
         z-20" }}
     {{ title }}
   {{ /partial:headings/h2 }}
 
   {{ partial:media/image 
+    :image="main_image"
     :sizes="['2xl', 'xl', 'lg']" 
-    class="w-full h-auto aspect-[4/3] object-cover relative z-10 group-hover:scale-110 origin-center transition-transform duration-700"
+    class="w-full h-full aspect-[4/3] object-cover relative z-10 group-hover:scale-110 origin-center transition-transform duration-700"
   }}
   
 </a>

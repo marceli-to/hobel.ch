@@ -1,0 +1,21 @@
+title: Tabelle
+fields:
+  -
+    handle: table_heading
+    field:
+      type: text
+      display: Titel
+      localizable: false
+  -
+    handle: table_row
+    field:
+      type: grid
+      display: Zeile
+      localizable: false
+      fields:
+        -
+          handle: table_row_content
+          field:
+            type: textarea
+            display: Inhalt
+            localizable: false

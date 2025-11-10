@@ -1,0 +1,24 @@
+tabs:
+  main:
+    display: Main
+    sections:
+      -
+        fields:
+          -
+            handle: shop_opening_hours_heading
+            field:
+              type: text
+              display: Titel
+              localizable: false
+          -
+            handle: shop_opening_hours_content
+            field:
+              buttons:
+                - italic
+                - unorderedlist
+                - removeformat
+              toolbar_mode: floating
+              remove_empty_nodes: false
+              type: bard
+              display: Öffnungszeiten
+              localizable: false

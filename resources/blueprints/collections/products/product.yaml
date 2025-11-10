@@ -4,7 +4,7 @@ tabs:
     display: Content
     sections:
       -
-        display: 'Header (Full Width)'
+        display: Content
         fields:
           -
             handle: title
@@ -15,46 +15,76 @@ tabs:
               validate:
                 - required
           -
-            handle: header
+            handle: main_image
             field:
-              import: editor
-              display: 'Header Content'
-              localizable: true
-      -
-        display: 'Left Column'
-        fields:
+              max_files: 1
+              container: assets
+              type: assets
+              display: Hauptbild
+              instructions: 'Wird als Vorschaubild auf der Übersichtsseite verwendet'
+              localizable: false
+              instructions_position: below
+              folder: produkte
           -
-            handle: left_content
+            handle: images
             field:
-              type: replicator
-              display: Inhaltselemente
-              localizable: true
+              container: assets
+              type: assets
+              display: Bilder
+              localizable: false
+              width: 50
+              folder: produkte
+          -
+            handle: content
+            field:
               collapse: true
+              type: replicator
+              display: Inhalte
+              localizable: false
+              width: 50
               sets:
                 main_elements:
                   display: Hauptelemente
                   icon: addon-boxes-stack
                   sets:
-                    neues_set:
-                      display: 'Neues Set'
-                      fields: {  }
-      -
-        display: 'Right Column'
-        fields:
-          -
-            handle: right_content
-            field:
-              type: replicator
-              display: Inhaltselemente
-              localizable: true
-              collapse: true
-              sets:
-                main_elements:
-                  display: Hauptelemente
-                  icon: addon-boxes-stack
-                  sets:
-                    neues_set:
-                      display: 'Neues Set'
+                    editor:
+                      display: Text
+                      instructions: 'Texteditor hinzufügen'
+                      icon: text-formatting-markdown
+                      fields:
+                        -
+                          import: editor
+                    table:
+                      display: Tabelle
+                      instructions: 'Tabelle mit Zeilen'
+                      icon: layout-table-row-insert
+                      fields:
+                        -
+                          import: table
+                    quote:
+                      display: Zitat
+                      instructions: 'Zitat mit Autor'
+                      icon: text-formatting-quotation
+                      fields:
+                        -
+                          import: quote
+                    shop_opening_hours:
+                      display: Ladenöffnungszeiten
+                      instructions: Ladenöffnungszeiten
+                      icon: text-formatting-initial-letter
+                      fields:
+                        -
+                          import: shop_opening_hours
+                    single_image:
+                      display: Einzelbild
+                      instructions: 'Einzelbild mit optionaler Legende'
+                      icon: media-image-picture-orientation
+                      fields:
+                        -
+                          import: single_image
+                    spacer:
+                      display: Spacer
+                      icon: layout-split-horizontal
                       fields: {  }
   seo:
     display: SEO
@@ -64,14 +94,6 @@ tabs:
         fields:
           -
             import: seo
-  settings:
-    display: Settings
-    sections:
-      -
-        display: Settings
-        fields:
-          -
-            import: settings
   sidebar:
     display: Sidebar
     sections:
@@ -84,3 +106,12 @@ tabs:
               localizable: true
               validate: 'max:200'
               show_regenerate: true
+          -
+            handle: parent
+            field:
+              type: entries
+              collections:
+                - products
+              max_items: 1
+              listable: false
+              localizable: true

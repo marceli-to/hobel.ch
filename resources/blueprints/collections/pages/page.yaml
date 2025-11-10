@@ -64,16 +64,16 @@ tabs:
               display: 'Inhalt Links'
               localizable: true
               collapsed: true
-              width: 50
               if:
                 template: 'contains_any templates/two-column,templates/landing'
+              collapse: true
               sets:
                 main:
                   display: Main
                   sets:
                     editor:
                       display: Editor
-                      instructions: 'Rich-Text-Editor für formatierten Inhalt mit Überschriften, Listen, Links.'
+                      instructions: 'Text-Editor für formatierten Inhalt mit Überschriften, Listen, Links.'
                       icon: text-formatting-markdown
                       fields:
                         -
@@ -85,6 +85,28 @@ tabs:
                       fields:
                         -
                           import: page_teaser
+                    product_teaser:
+                      display: Produkteteaser
+                      instructions: 'Produkteteaser mit Bild, Titel und Link'
+                      icon: media-image-picture-gallery
+                      fields:
+                        -
+                          import: product_teaser
+                    single_image:
+                      display: Einzelbild
+                      instructions: 'Einzelbild mit optionaler Legende'
+                      icon: media-image-picture-orientation
+                      fields:
+                        -
+                          import: single_image
+          -
+            handle: padding_x
+            field:
+              type: toggle
+              display: 'Innenabstand?'
+              instructions: 'Innenabstand Spalte (nur mobile Ansicht)'
+              localizable: false
+              instructions_position: below
           -
             handle: content_right
             field:
@@ -92,17 +114,60 @@ tabs:
               display: 'Inhalt Rechts'
               localizable: true
               collapsed: true
-              width: 50
               if:
                 template: 'contains_any templates/two-column,templates/landing'
+              collapse: true
               sets:
-                editor:
-                  display: Editor
-                  instructions: 'Rich text editor for formatted content with headings, lists, links, and more.'
-                  icon: text-formatting-markdown
-                  fields:
-                    -
-                      import: editor
+                main:
+                  display: Main
+                  sets:
+                    editor:
+                      display: Editor
+                      instructions: 'Rich text editor for formatted content with headings, lists, links, and more.'
+                      icon: text-formatting-markdown
+                      fields:
+                        -
+                          import: editor
+                    table:
+                      display: Tabelle
+                      instructions: 'Tabelle mit Zeilen'
+                      icon: layout-table-row-insert
+                      fields:
+                        -
+                          import: table
+                    quote:
+                      display: Zitat
+                      instructions: 'Zitat mit Autor'
+                      icon: text-formatting-quotation
+                      fields:
+                        -
+                          import: quote
+                    shop_opening_hours:
+                      display: Ladenöffnungszeiten
+                      instructions: Ladenöffnungszeiten
+                      icon: text-formatting-initial-letter
+                      fields:
+                        -
+                          import: shop_opening_hours
+                    single_image:
+                      display: Einzelbild
+                      instructions: 'Einzelbild mit optionaler Legende'
+                      icon: media-image-picture-orientation
+                      fields:
+                        -
+                          import: single_image
+                    spacer:
+                      display: Spacer
+                      icon: layout-split-horizontal
+                      fields: {  }
+          -
+            handle: fullwidth
+            field:
+              type: toggle
+              display: 'Ganze Breite?'
+              instructions: 'Inhalte 100% Breite darstellen'
+              localizable: false
+              instructions_position: below
   seo:
     display: SEO
     sections:

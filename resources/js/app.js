@@ -9,3 +9,4 @@ Alpine.data('dynamicHeader', dynamicHeader)
 Alpine.start();
 
 import './bootstrap';
+import './modules/productSwiper';

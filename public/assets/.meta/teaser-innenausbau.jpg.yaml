@@ -1,6 +1,7 @@
-data: {  }
+data:
+  alt: 'Ich bin ein Legendentext'
 size: 200793
-last_modified: 1762295623
+last_modified: 1762327281
 width: 1580
 height: 1200
 mime_type: image/jpeg

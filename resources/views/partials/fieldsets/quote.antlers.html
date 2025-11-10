@@ -1,0 +1,14 @@
+<article>
+
+  {{ if quote_content }}
+    <div class="text-lg leading-[1.25] font-muoto-light-italic font-italic">
+      «{{ quote_content | nl2br }}»
+    </div>
+  {{ /if }}
+
+  {{ if quote_author }}
+    <div class="mt-16">
+      {{ quote_author }}
+    </div>
+  {{ /if }}
+</article>

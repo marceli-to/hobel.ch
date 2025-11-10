@@ -1,0 +1,14 @@
+title: Zitat
+fields:
+  -
+    handle: quote_content
+    field:
+      type: textarea
+      display: Zitat
+      localizable: false
+  -
+    handle: quote_author
+    field:
+      type: text
+      display: Autor
+      localizable: false

@@ -1,0 +1,28 @@
+shop_opening_hours_heading: 'Unsere Ladenöffnungszeiten ab Oktober'
+shop_opening_hours_content:
+  -
+    type: paragraph
+    attrs:
+      class: null
+    content:
+      -
+        type: text
+        text: 'Dienstag – Freitag:'
+      -
+        type: hardBreak
+      -
+        type: text
+        text: '9:45 – 14:00 Uhr und 14:30 – 18:30 Uhr'
+  -
+    type: paragraph
+    attrs:
+      class: null
+    content:
+      -
+        type: text
+        text: 'Samstag:'
+      -
+        type: hardBreak
+      -
+        type: text
+        text: '09:45 – 16:00 Uhr'

@@ -1,0 +1,16 @@
+title: Einzelbild
+fields:
+  -
+    handle: image
+    field:
+      max_files: 1
+      container: assets
+      type: assets
+      display: Bild
+      localizable: false
+  -
+    handle: caption
+    field:
+      type: text
+      display: Legende
+      localizable: false

@@ -1,0 +1,13 @@
+<article>
+  {{ if shop_opening_hours:shop_opening_hours_heading }}
+    {{ partial:headings/h3 class="mb-12" }}
+      {{ shop_opening_hours:shop_opening_hours_heading }}
+    {{ /partial:headings/h3 }}
+  {{ /if }}
+
+  {{ if  shop_opening_hours:shop_opening_hours_content }}
+    <div class="[&_p]:mb-12 last:[&_p]:mb-0">
+      {{ shop_opening_hours:shop_opening_hours_content }}
+    </div>
+  {{ /if }}
+</article>

@@ -1,0 +1,10 @@
+title: Produkteteaser
+fields:
+  -
+    handle: products
+    field:
+      type: entries
+      display: Produkte
+      localizable: false
+      collections:
+        - products

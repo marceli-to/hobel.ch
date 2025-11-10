@@ -20,7 +20,7 @@
       px-20
       lg:px-0">
 
-    <!-- Title desktop -->
+    <!-- Title desktop, Backlink -->
     <div 
       class="
         hidden 
@@ -28,10 +28,34 @@
         lg:col-span-6 
         lg:pl-20">
 
-      <h1 class="text-lg leading-none">
-        {{ title }}
-      </h1>
-      
+
+      {{ if is_entry && collection == 'products' }}
+
+        <div 
+          class="
+            flex 
+            justify-between 
+            items-start">
+
+          <h1 class="text-lg leading-none">
+            {{ title }}
+          </h1>
+
+          {{ partial:products/components/backlink class="text-xs gap-x-8 mt-4" }}
+          
+        </div>
+
+      {{ else }}
+
+        <h1 
+          class="
+            text-lg 
+            leading-none">
+          {{ title }}
+        </h1>
+
+      {{ /if }}
+
     </div>
 
     <!-- Logo, Title mobile, Menu buttons -->
@@ -45,7 +69,7 @@
         lg:col-span-5 
         lg:col-start-8">
 
-      <!-- Logo, Title mobile -->
+      <!-- Logo, Title mobile, Backlink -->
       <div 
         class="
           flex 
@@ -60,13 +84,22 @@
           {{ partial:icons/logo class="w-auto h-full" }}
         </a>
 
-        <h1 class="
-          font-muoto-regular 
-          text-xxs 
-          leading-none 
-          lg:hidden">
-          {{ title }}
-        </h1>
+        <!-- Title, Backlink -->
+        {{ if is_entry && collection == 'products' }}
+
+          {{ partial:products/components/backlink class="text-xxs gap-x-8 lg:hidden" }}
+
+        {{ else }}
+
+          <h1 class="
+            font-muoto-regular 
+            text-xxs 
+            leading-none 
+            lg:hidden">
+            {{ title }}
+          </h1>
+
+        {{ /if }}
         
       </div>
 

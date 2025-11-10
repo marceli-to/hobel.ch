@@ -1,0 +1,8 @@
+<div class="hidden lg:flex lg:flex-col lg:gap-y-20">
+  {{ images }}
+    {{ partial:media/image
+      :image="url"
+      :sizes="['2xl', 'xl', 'lg']"
+      class="w-full h-auto" }}
+  {{ /images }}
+</div>
