@@ -13,6 +13,8 @@ fields:
         - superscript
         - anchor
         - nobr
+        - link-external
+        - link-internal
         - text-large
       toolbar_mode: floating
       remove_empty_nodes: true
@@ -21,3 +23,44 @@ fields:
       container: assets
       localizable: true
       collapse: true
+      sets:
+        link:
+          display: Link
+          instructions: 'Link mit Icon'
+          icon: link
+          sets:
+            link:
+              display: Link
+              instructions: 'Link mit Icon'
+              icon: link
+              fields:
+                -
+                  handle: link
+                  field:
+                    collections:
+                      - pages
+                      - products
+                    container: assets
+                    type: link
+                    display: Link
+                    localizable: false
+                -
+                  handle: link_text
+                  field:
+                    type: text
+                    display: 'Link Text'
+                    localizable: false
+                -
+                  handle: target
+                  field:
+                    options:
+                      -
+                        key: _self
+                        value: 'Gleiches Fenster'
+                      -
+                        key: _blank
+                        value: 'Neues Fenster'
+                    default: _blank
+                    type: select
+                    display: 'Öffnen in'
+                    localizable: false

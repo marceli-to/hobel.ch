@@ -99,6 +99,18 @@ article h2 {
   @apply mb-16 lg:mb-24;
 }
 
+article a {
+  @apply hover:underline underline-offset-2 decoration-1;
+}
+
+article p.text-large a {
+  @apply decoration-2 underline-offset-4;
+}
+
+article a.link-external {
+  @apply inline-flex items-center gap-x-8 text-black !no-underline after:content-[''] after:inline-block after:w-[1.25rem] after:h-[1.25rem] after:bg-[url('/img/icons/link-external.svg')] after:bg-no-repeat after:bg-center after:bg-contain after:shrink-0 after:relative after:top-1;
+}
+
 /* Debug helper */
 .debug > * {
   @apply bg-green-50 outline outline-1 outline-green-200;

@@ -7,7 +7,7 @@ robots: index_follow
 template: templates/two-column
 layout: layout/default
 updated_by: c2f8321e-be41-4d83-b9ee-8136dba46b39
-updated_at: 1762786851
+updated_at: 1762847614
 content_left:
   -
     id: mht9hcow
@@ -24,6 +24,15 @@ content_left:
             type: hardBreak
           -
             type: text
+            marks:
+              -
+                type: link
+                attrs:
+                  class: link-external
+                  href: 'https://maps.app.goo.gl/dZjeksW84bxm9F816'
+                  rel: null
+                  target: _blank
+                  title: null
             text: 'Aargauerstrasse 251, 8048 Zürich'
           -
             type: hardBreak
@@ -47,6 +56,15 @@ content_left:
             type: hardBreak
           -
             type: text
+            marks:
+              -
+                type: link
+                attrs:
+                  class: link-external
+                  href: 'https://maps.app.goo.gl/JnH42Re6EsyWfkLp9'
+                  rel: null
+                  target: _blank
+                  title: null
             text: 'Neumarkt 8, 8001 Zürich'
           -
             type: hardBreak

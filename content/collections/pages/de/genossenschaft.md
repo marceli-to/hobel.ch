@@ -7,7 +7,7 @@ robots: index_follow
 template: templates/two-column
 layout: layout/default
 updated_by: c2f8321e-be41-4d83-b9ee-8136dba46b39
-updated_at: 1762780674
+updated_at: 1762847954
 content_left:
   -
     id: mhmjq26v
@@ -99,13 +99,14 @@ content_right:
             type: text
             text: 'Wir lieben es, gemeinsam mit Ihnen Ideen zu entwickeln, die Ihr Zuhause einzigartig machen.'
       -
-        type: paragraph
+        type: set
         attrs:
-          class: null
-        content:
-          -
-            type: text
-            text: 'Unser Team '
+          id: mhua58dh
+          values:
+            type: link
+            link: 'entry::39d2f950-7e52-4b9c-8e35-8ac0d3a78649'
+            link_text: 'Unser Team'
+            target: _blank
     type: editor
     enabled: true
 background_header: bg-white

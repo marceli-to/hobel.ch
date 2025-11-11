@@ -23,6 +23,16 @@ return [
           'cp_badge' => false,
         ],
 
+        'link-external' => [
+          'type' => 'link',
+          'name' => 'Link external',
+          'ident' => 'Le',
+          'icon' => 'link',
+          'class' => 'link-external',
+          'cp_css' => '',
+          'cp_badge' => false,
+        ],
+
         'text-large' => [
           'type' => 'paragraph',
           'name' => 'Text Large',
@@ -31,7 +41,7 @@ return [
           'class' => 'text-large',
           'cp_css' => 'font-size: 1.2rem; line-height: 1.6rem',
           'cp_badge' => false,
-      ],
+        ],
       
     ],
 
