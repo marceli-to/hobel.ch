@@ -2,10 +2,9 @@
   x-data="dynamicHeader"
   data-dynamic-header="true"
   class="
-    _bg-white
     w-full
     top-0
-    z-30
+    z-40
     pt-20
     lg:pt-32
     lg:h-[var(--header-height-lg)]
@@ -31,7 +30,8 @@
         h-full
         w-full
         flex 
-        justify-between">
+        justify-between
+        items-start">
 
       <!-- Logo -->
       <div class="lg:order-2">
@@ -39,6 +39,7 @@
           href="/"
           data-dynamic-logo
           class="
+            block
             w-auto 
             lg:h-80 
             transition-[height] 
@@ -50,7 +51,7 @@
       </div>
 
       <!-- Menu Buttons -->
-      <div class="lg:order-1">
+      <div class="lg:order-1 lg:-mt-2">
 
         <div 
           class="

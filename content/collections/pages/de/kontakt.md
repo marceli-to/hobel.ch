@@ -7,7 +7,7 @@ robots: index_follow
 template: templates/two-column
 layout: layout/default
 updated_by: c2f8321e-be41-4d83-b9ee-8136dba46b39
-updated_at: 1762847614
+updated_at: 1763726418
 content_left:
   -
     id: mht9hcow
@@ -28,7 +28,7 @@ content_left:
               -
                 type: link
                 attrs:
-                  class: link-external
+                  class: null
                   href: 'https://maps.app.goo.gl/dZjeksW84bxm9F816'
                   rel: null
                   target: _blank
@@ -60,7 +60,7 @@ content_left:
               -
                 type: link
                 attrs:
-                  class: link-external
+                  class: null
                   href: 'https://maps.app.goo.gl/JnH42Re6EsyWfkLp9'
                   rel: null
                   target: _blank
@@ -84,6 +84,7 @@ content_left:
     type: single_image
     enabled: true
     caption: 'Bild vom Laden'
+    spacing_before: true
 padding_x: true
 content_right:
   -

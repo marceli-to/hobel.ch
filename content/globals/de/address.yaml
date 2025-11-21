@@ -6,11 +6,35 @@ address_mobile:
     content:
       -
         type: text
+        marks:
+          -
+            type: link
+            attrs:
+              href: 'https://maps.app.goo.gl/pbZ5pnfmiQoT96PVA'
+              rel: null
+              target: _blank
+              title: null
         text: 'Aargauerstrasse 251'
       -
         type: hardBreak
+        marks:
+          -
+            type: link
+            attrs:
+              href: 'https://maps.app.goo.gl/pbZ5pnfmiQoT96PVA'
+              rel: null
+              target: _blank
+              title: null
       -
         type: text
+        marks:
+          -
+            type: link
+            attrs:
+              href: 'https://maps.app.goo.gl/pbZ5pnfmiQoT96PVA'
+              rel: null
+              target: _blank
+              title: null
         text: '8048 Zürich'
       -
         type: hardBreak
@@ -46,7 +70,18 @@ address_desktop:
     content:
       -
         type: text
-        text: 'Aargauerstrasse 251, 8048 Zürich / '
+        marks:
+          -
+            type: link
+            attrs:
+              href: 'https://maps.app.goo.gl/pbZ5pnfmiQoT96PVA'
+              rel: null
+              target: _blank
+              title: null
+        text: 'Aargauerstrasse 251, 8048 Zürich'
+      -
+        type: text
+        text: ' / '
       -
         type: text
         marks:

@@ -14,3 +14,10 @@ fields:
       type: text
       display: Legende
       localizable: false
+  -
+    handle: spacing_before
+    field:
+      type: toggle
+      display: 'Abstand vorher'
+      instructions: 'Fügt einen zusätzlichen Abstand vor dem Element ein'
+      localizable: false

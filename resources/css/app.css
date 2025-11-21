@@ -11,7 +11,7 @@
 /* Base variables */
 @layer base {
   :root {
-    --header-height-sm: 4.063rem;  /* 65px */
+    --header-height-sm: 4.063rem;  /* (was: 4.063rem | 65px, new: 6.5625rem | 105px) */
     --header-height-lg: 7.5rem; /* 120px */
     --header-height-expanded: 6.25rem; /* 100px (was 8.75rem | 140px) */
     --footer-height-sm: 25rem; /* 400px */
@@ -104,7 +104,7 @@ article a {
 }
 
 article p.text-large a {
-  @apply decoration-2 underline-offset-4;
+  @apply decoration-1 underline-offset-4;
 }
 
 article a.link-external {
