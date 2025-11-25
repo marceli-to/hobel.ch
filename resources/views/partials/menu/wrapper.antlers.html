@@ -7,11 +7,11 @@
     right-0 
     z-30 
     pr-20 
-    pt-109
-    lg:pt-0
     lg:top-[var(--header-height-lg)]
     h-dvh
-    lg:h-[calc(100dvh_-_var(--header-height-lg))]"
+    lg:h-[calc(100dvh_-_var(--header-height-lg))]
+    {{ is_homepage ? 'pt-138' : 'pt-109' }}
+    lg:pt-0"
   x-cloak
   x-show="menu"
   @click.outside="menu = false"
