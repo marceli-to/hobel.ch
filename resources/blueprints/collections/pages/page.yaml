@@ -165,7 +165,7 @@ tabs:
             field:
               type: toggle
               display: 'Ganze Breite?'
-              instructions: 'Inhalte 100% Breite darstellen'
+              instructions: 'Text auf 100% Breite darstellen'
               localizable: false
               instructions_position: below
   seo:
