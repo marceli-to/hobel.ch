@@ -2,13 +2,13 @@
 <html lang="{{ site:short_locale }}" class="scroll-smooth overflow-y-scroll {{ page_class ?? '' }}">
 <head>
 <meta charset="utf-8">
-{{ if is_homepage }}<title>Hobel AG</title>{{ else }}<title>{{ meta_title ?? title ?? site:name }} • Hobel AG</title>{{ endif }}
+{{ if is_homepage }}<title>Hobel – Genossenschaft für Möbel und Innenausbau</title>{{ else }}<title>{{ meta_title ?? title ?? site:name }} • Hobel – Genossenschaft für Möbel und Innenausbau</title>{{ endif }}
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 {{ if meta_description }}<meta name="description" content="{{ meta_description }}">{{ else }}<meta name="description" content="{{ config.client.meta_description }}">{{ /if}}
 {{ if canonical_url }}<link rel="canonical" href="{{ canonical_url }}">{{ else }}<link rel="canonical" href="{{ permalink }}">{{ /if }}
 {{ if robots }}<meta name="robots" content="{{ robots | replace:'_':', ' }}">{{ else }}<meta name="robots" content="index, follow">{{ /if }}
-{{ if is_homepage }}<meta property="og:title" content="Hobel AG">{{ else }}<meta property="og:title" content="{{ open_graph_title ?? meta_title ?? title ?? site:name }} • Hobel AG">{{ endif }}
+{{ if is_homepage }}<meta property="og:title" content="Hobel – Genossenschaft für Möbel und Innenausbau">{{ else }}<meta property="og:title" content="{{ open_graph_title ?? meta_title ?? title ?? site:name }} • Hobel – Genossenschaft für Möbel und Innenausbau">{{ endif }}
 {{ if open_graph_description }}<meta property="og:description" content="{{ open_graph_description }}">{{ elseif meta_description }}<meta property="og:description" content="{{ meta_description }}">{{ else }}<meta property="og:description" content="{{ config.client.meta_description }}">{{ /if }}
 {{ if open_graph_image }}<meta property="og:image" content="{{ config.client.base_url }}{{ open_graph_image:url }}"> {{ else }}<meta property="og:image" content="{{ config.client.base_url }}/opengraph.jpg">{{ /if }}
 <meta property="og:url" content="{{ current_url }}">
@@ -18,7 +18,7 @@
 <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 <link rel="shortcut icon" href="/favicon.ico" />
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-<meta name="apple-mobile-web-app-title" content="Hobel AG" />
+<meta name="apple-mobile-web-app-title" content="Hobel – Genossenschaft für Möbel und Innenausbau" />
 <link rel="manifest" href="/site.webmanifest" />
 {{ vite src="resources/css/app.css" }}
 </head>
