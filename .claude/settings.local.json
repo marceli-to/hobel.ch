@@ -15,7 +15,9 @@
       "Bash(git add:*)",
       "Bash(git commit -m \"$(cat <<''EOF''\nRedirect emails to MAIL_TO in non-production environments\n\nPrevents accidentally sending emails to real users during development and testing.\n\n🤖 Generated with [Claude Code](https://claude.com/claude-code)\n\nCo-Authored-By: Claude <noreply@anthropic.com>\nEOF\n)\")",
       "mcp__laravel-boost__list-routes",
-      "mcp__laravel-boost__tinker"
+      "mcp__laravel-boost__tinker",
+      "Bash(composer remove:*)",
+      "Bash(git commit -m \"$\\(cat <<''EOF''\nremoves unused livewire dependency\n\nCo-Authored-By: Claude Opus 4.6 <noreply@anthropic.com>\nEOF\n\\)\")"
     ],
     "deny": []
   },
