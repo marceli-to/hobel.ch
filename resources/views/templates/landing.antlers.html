@@ -48,19 +48,20 @@
       lg:items-start">
 
       <!-- Content -->
-      <div class="col-span-4">
+      <div class="col-span-4" data-landing-content>
         {{ content_right }}
           {{ partial:blocks }}
         {{ /content_right }}
       </div>
 
       <!-- Claim -->
-      <div 
+      <div
+        data-landing-claim
         class="
-          hidden 
-          lg:block 
-          lg:fixed 
-          lg:left-start-8 
+          hidden
+          lg:block
+          lg:fixed
+          lg:left-start-8
           lg:bottom-40">
 
         {{ partial:claim }}

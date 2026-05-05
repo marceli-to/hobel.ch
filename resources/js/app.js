@@ -10,3 +10,4 @@ Alpine.start();
 
 import './bootstrap';
 import './modules/productSwiper';
+import './modules/landingClaim';
