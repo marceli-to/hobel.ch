@@ -10,7 +10,7 @@
 {{ if robots }}<meta name="robots" content="{{ robots | replace:'_':', ' }}">{{ else }}<meta name="robots" content="index, follow">{{ /if }}
 {{ if is_homepage }}<meta property="og:title" content="Hobel – Genossenschaft für Möbel und Innenausbau">{{ else }}<meta property="og:title" content="{{ open_graph_title ?? meta_title ?? title ?? site:name }} • Hobel – Genossenschaft für Möbel und Innenausbau">{{ endif }}
 {{ if open_graph_description }}<meta property="og:description" content="{{ open_graph_description }}">{{ elseif meta_description }}<meta property="og:description" content="{{ meta_description }}">{{ else }}<meta property="og:description" content="{{ config.client.meta_description }}">{{ /if }}
-{{ if open_graph_image }}<meta property="og:image" content="{{ config.client.base_url }}{{ open_graph_image:url }}"> {{ else }}<meta property="og:image" content="{{ config.client.base_url }}/opengraph.jpg">{{ /if }}
+{{ if open_graph_image }}<meta property="og:image" content="{{ config.client.base_url }}{{ open_graph_image:url }}"> {{ else }}<meta property="og:image" content="{{ config.client.base_url }}/og_image.jpg">{{ /if }}
 <meta property="og:url" content="{{ current_url }}">
 <meta property="og:type" content="{{ open_graph_type ?? 'website' }}">
 <meta name="csrf-token" content="{{ csrf_token }}">
